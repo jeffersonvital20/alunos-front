@@ -21,7 +21,6 @@ export const useDrawerContext = () => {
 interface IDrawerProviderProps{
   children: React.ReactNode
 }
-// eslint-disable-next-line react/prop-types
 export const DrawerProvider: React.FC<IDrawerProviderProps> = ({ children }) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [drawerOptions, setdrawerOptions] = useState<IDrawerOptions[]>([]);

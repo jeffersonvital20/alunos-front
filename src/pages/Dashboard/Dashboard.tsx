@@ -8,7 +8,7 @@ import { FerramentasDeListagem } from '../../shared/component/ferramentas-da-lis
 
 export const Dashboard = () => {
   const [isLoadingContas, setIsLoadingContas] = useState(true);
-  const [totalCountContas, setTotalCountContas] = useState(0);
+  const [totalAlunos, settotalAlunos] = useState(0);
 
 
 
@@ -20,19 +20,18 @@ export const Dashboard = () => {
       <Box width='100%' display='flex'>
         <Grid container margin={2}>
           <Grid item container spacing={2}>
-
             <Grid item xs={12} sm={12} md={6} lg={4} xl={3}>
 
               <Card>
                 <CardContent>
                   <Typography variant='h5' align='center'>
-                    Total de Contas
+                    Total de Alunos
                   </Typography>
 
                   <Box padding={6} display='flex' justifyContent='center' alignItems='center'>
                     {!isLoadingContas && (
                       <Typography variant='h1'>
-                        {totalCountContas}
+                        {totalAlunos}
                       </Typography>
                     )}
                     {isLoadingContas && (

@@ -4,8 +4,6 @@ import { CssBaseline, ThemeProvider } from '@mui/material';
 import { Box } from '@mui/system';
 import { DarkTheme, LigthTheme } from '../themes';
 
-//import { DarkTheme, LigthTheme } from './../themes';
-//import { Css } from '@mui/icons-material';
 
 interface IThemeContextData {
   themeName: 'light' | 'dark';

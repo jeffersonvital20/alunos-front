@@ -22,11 +22,12 @@ export const AppRoutes = () => {
     ]);
   },[]);
 
-  return (
+  return (   
+    
     <Routes>
       <Route path="/pagina-inicial" element={<Dashboard/>} />
-      <Route path="/contas" element={<ListagemDeContas/>} />
-      <Route path="/contas/detalhe/:id" element={<DetalheDeContas/>} />
+      {/* <Route path="/contas" element={<ListagemDeContas/>} />
+      <Route path="/contas/detalhe/:id" element={<DetalheDeContas/>} /> */}
 
       <Route path="*" element={<Navigate to="/pagina-inicial" />} />
     </Routes>

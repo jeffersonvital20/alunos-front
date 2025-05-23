@@ -1,5 +1,4 @@
 
-import './App.css'
 import { AppRoutes } from './routes';
 import { MenuLateral } from './shared/component/menu-lateral/MenuLateral';
 import { AppThemeProvider, DrawerProvider } from './shared/contexts';

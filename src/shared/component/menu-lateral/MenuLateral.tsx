@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable quotes */
 import { Avatar, Divider, Drawer, Icon, List, ListItemButton, ListItemIcon, ListItemText, useMediaQuery, useTheme } from "@mui/material";
 import { Box } from '@mui/system';
 import { useMatch, useNavigate, useResolvedPath } from "react-router-dom";
@@ -36,7 +34,6 @@ const ListItemLink: React.FC<IListItemLinkProps> = ({ to, icon, label, onClick }
 interface IMenulateralProps{
     children: React.ReactNode
 }
-// eslint-disable-next-line react/prop-types
 export const MenuLateral: React.FC<IMenulateralProps> = ({ children }) => {
   const theme = useTheme();
   const smDown = useMediaQuery(theme.breakpoints.down('sm'));

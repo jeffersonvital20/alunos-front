@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { useDrawerContext } from '../shared/contexts';
 import { useEffect } from 'react';
-import { Dashboard } from '../pages';
+import { Dashboard, ListagemDeAlunos } from '../pages';
 //import { ContasService } from '../shared/services/api/contas/contasServices';
 
 export const AppRoutes = () => {
@@ -13,12 +13,12 @@ export const AppRoutes = () => {
         icon: 'home',
         to: '/pagina-inicial',
         label: 'Página inicial',
+      },
+      {
+        icon: 'face',
+        to: '/alunos',
+        label: 'Alunos',
       }
-    //   {
-    //     icon: 'star',
-    //     to: '/contas',
-    //     label: 'Contas',
-    //   }
     ]);
   },[]);
 
@@ -26,8 +26,8 @@ export const AppRoutes = () => {
     
     <Routes>
       <Route path="/pagina-inicial" element={<Dashboard/>} />
-      {/* <Route path="/contas" element={<ListagemDeContas/>} />
-      <Route path="/contas/detalhe/:id" element={<DetalheDeContas/>} /> */}
+      <Route path="/alunos" element={<ListagemDeAlunos/>} />
+      {/*<Route path="/contas/detalhe/:id" element={<DetalheDeContas/>} /> */}
 
       <Route path="*" element={<Navigate to="/pagina-inicial" />} />
     </Routes>
